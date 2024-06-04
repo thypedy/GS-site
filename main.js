@@ -91,3 +91,51 @@ const carousel = document.querySelector('.carousel-container');
 
 carousel.addEventListener('mouseenter', stopAutoplay);
 carousel.addEventListener('mouseleave', startAutoplay);
+
+//Ir para Criar conta
+document.addEventListener('DOMContentLoaded', () => {
+  const createAccountBtn = document.getElementById('createAccountBtn');
+
+  if (createAccountBtn) {
+    createAccountBtn.addEventListener('click', () => {
+      window.location.href = 'criarConta.html';
+    });
+  }
+});
+
+
+//Ir Login
+document.addEventListener('DOMContentLoaded', () => {
+  const loginBtn = document.getElementById('loginBtn');
+
+  if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+      window.location.href = 'login.html';
+    });
+  }
+});
+
+// Verifica se o login foi bem-sucedido (suponha que a variável isLoggedIn seja verdadeira)
+const isLoggedIn = true; // Supondo que o login seja bem-sucedido
+
+// Função para atualizar a exibição dos elementos após o login
+function updateUIAfterLogin() {
+  // Oculta os botões de criar conta e login
+  const createAccountBtn = document.getElementById('createAccountBtn');
+  const loginBtn = document.getElementById('loginBtn');
+  if (createAccountBtn && loginBtn) {
+    createAccountBtn.style.display = 'none';
+    loginBtn.style.display = 'none';
+  }
+  
+  // Exibe o ícone de perfil
+  const profileIcon = document.getElementById('profileIcon');
+  if (profileIcon) {
+    profileIcon.style.display = 'block';
+  }
+}
+
+// Verifica se o login foi bem-sucedido e atualiza a interface
+if (isLoggedIn) {
+  updateUIAfterLogin();
+}

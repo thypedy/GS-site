@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para o corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #90E0EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilos para o container do formulário */
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Estilos para o título "Login" */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para o formulário */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilos para o botão de "Entrar" */
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para a mensagem de erro */
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /*Voltar*/
+  .back-link {
+    display: block;
+    width: 22%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+    background-color: #0077B6;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    background-color: #023047;
+  }
+  
