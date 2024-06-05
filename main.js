@@ -115,27 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Verifica se o login foi bem-sucedido (suponha que a variável isLoggedIn seja verdadeira)
-const isLoggedIn = true; // Supondo que o login seja bem-sucedido
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
 
-// Função para atualizar a exibição dos elementos após o login
-function updateUIAfterLogin() {
-  // Oculta os botões de criar conta e login
-  const createAccountBtn = document.getElementById('createAccountBtn');
-  const loginBtn = document.getElementById('loginBtn');
-  if (createAccountBtn && loginBtn) {
-    createAccountBtn.style.display = 'none';
-    loginBtn.style.display = 'none';
-  }
-  
-  // Exibe o ícone de perfil
-  const profileIcon = document.getElementById('profileIcon');
-  if (profileIcon) {
-    profileIcon.style.display = 'block';
-  }
-}
-
-// Verifica se o login foi bem-sucedido e atualiza a interface
-if (isLoggedIn) {
-  updateUIAfterLogin();
-}
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});

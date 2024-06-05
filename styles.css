@@ -23,7 +23,8 @@
   padding: 5rem 1rem;
 }
 
-.section__subheader, .section__subheader2 {
+.section__subheader,
+.section__subheader2 {
   margin-bottom: 0.5rem;
   position: relative;
   font-weight: 500;
@@ -86,7 +87,8 @@ a {
   max-width: 120px;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -130,12 +132,13 @@ nav {
   list-style: none;
   position: absolute;
   width: 100%;
+  height: auto;
   padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: rgba(30, 81, 192, 0.9);
+  background-color: var(--primary-color-yellow);
   transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
@@ -177,7 +180,8 @@ nav {
   text-align: center;
 }
 
-.header__container h1 span , .solution__content p span{
+.header__container h1 span,
+.solution__content p span {
   color: var(--primary-color);
 }
 
@@ -235,7 +239,7 @@ nav {
   background-color: var(--primary-color-yellow);
   padding: 4rem 2rem;
   position: relative;
-  
+
 }
 
 .section__indicator {
@@ -504,7 +508,8 @@ nav {
 
 iframe {
   width: 500px;
-  height: 315px; /* Ajuste conforme necessário */
+  height: 315px;
+  /* Ajuste conforme necessário */
   margin-left: 120px;
   border: none;
 }
@@ -512,11 +517,16 @@ iframe {
 /* Consulta de mídia para telas menores */
 @media screen and (max-width: 420px) {
   iframe {
-    width: 90%; /* Define a largura do vídeo para ocupar 90% do contêiner pai */
-    height: auto; /* Permite que a altura seja ajustada automaticamente de acordo com a largura */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-    display: block; /* Garante que o iframe seja exibido como bloco */
+    width: 90%;
+    /* Define a largura do vídeo para ocupar 90% do contêiner pai */
+    height: auto;
+    /* Permite que a altura seja ajustada automaticamente de acordo com a largura */
+    margin-left: auto;
+    /* Centraliza horizontalmente */
+    margin-right: auto;
+    /* Centraliza horizontalmente */
+    display: block;
+    /* Garante que o iframe seja exibido como bloco */
   }
 }
 
